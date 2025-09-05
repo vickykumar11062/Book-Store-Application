@@ -34,6 +34,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/books/:id" element={<SingleBook />} />
+         <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+         <Route path="/home" element={<Home />} />
       </Routes>
       <Footer />
     </Provider>
