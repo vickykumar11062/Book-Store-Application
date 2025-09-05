@@ -8,12 +8,12 @@ const Contact = () => {
         <div className="adresse contact-section">
           <i className="bi bi-house-fill"></i>
           <h2>Adress</h2>
-          <p>Hadjout-Tipaza-Algeria</p>
+          <p>Jodhpur, Rajasthan</p>
         </div>
         <div className="phone-call contact-section">
           <i className="bi bi-telephone-fill"></i>
           <h2>Phone</h2>
-          <p>123-456-789</p>
+          <p>9128634469</p>
         </div>
         <div className="email contact-section">
           <i className="bi bi-envelope-fill"></i>
