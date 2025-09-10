@@ -3,10 +3,14 @@
   flex-direction: column;
   padding: 20px 30px;
 }
+
 .contact-ways {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
 .contact-ways .contact-section {
   width: 30%;
   padding: 30px 10px;
@@ -14,56 +18,81 @@
   flex-direction: column;
   align-items: center;
   font-size: 18px;
+  text-align: center;
 }
+
 .contact-ways .contact-section i,
 .contact-ways .contact-section h2 {
   font-size: 30px;
   font-weight: 400;
   color: var(--primary-color);
 }
+
 .contact-ways .contact-section h2 {
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .contact-ways .contact-section {
+    width: 80%;
+  }
+}
+
 @media (max-width: 480px) {
   .contact-ways .email p {
     width: 100%;
     overflow-wrap: break-word;
   }
 }
+
 form {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   gap: 20px;
 }
+
 form h2 {
   text-align: center;
 }
+
 form .name-subject-mail {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 form .name-subject-mail input {
   padding: 10px;
-  width: 30%;
-  font-size: 20px;
+  flex: 1;
+  min-width: 200px;
+  font-size: 18px;
   border: 2px solid gray;
+  border-radius: 5px;
 }
+
 form #contact-message {
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px;
   border: 2px solid gray;
+  border-radius: 5px;
 }
+
 form .contact-send-button {
-  width: 70px;
+  width: 100px;
   padding: 10px;
   background-color: var(--primary-color);
   color: white;
   border: none;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   border-radius: 10px;
   cursor: pointer;
+  align-self: center;
+  transition: 0.3s ease;
+}
+
+form .contact-send-button:hover {
+  background-color: #333;
 }

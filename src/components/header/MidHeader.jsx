@@ -22,7 +22,7 @@ const MidHeader = () => {
     <div className="mid-header header-section">
       <Link to="./">
         <div className="logo">
-          B<i className="bi bi-book"></i>kyy
+          B<i className="bi bi-book"></i>knest
         </div>
       </Link>
       <div className="search-box">

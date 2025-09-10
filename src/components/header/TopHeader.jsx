@@ -11,10 +11,10 @@ const TopHeader = ({ menuClicked, setMenuClicked }) => {
             setMenuClicked(!menuClicked);
           }}></i>
         <div className="phone">
-          <i className="bi bi-telephone-fill"></i>
+          <i className="bi bi-telephone-fill"></i>+91
           123-456-789
         </div>
-        <h2>Welcome To Bookyy</h2>
+        <h2>Welcome To <span>BookNest</span> </h2>
         <Link to="/login" className="login-link">
           <i className="bi bi-person-fill"></i>
           Login

@@ -5,58 +5,72 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
+      {/* Social Media Section */}
       <div className="social-media">
-        <p>Follow us on social media</p>
+        <p>Follow us on</p>
         <ul>
           <li>
-            <i className="bi bi-instagram"></i>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <i className="bi bi-instagram"></i>
+            </a>
           </li>
           <li>
-            <i className="bi bi-telegram"></i>
+            <a href="https://t.me" target="_blank" rel="noreferrer">
+              <i className="bi bi-telegram"></i>
+            </a>
           </li>
           <li>
-            <i className="bi bi-youtube"></i>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer">
+              <i className="bi bi-youtube"></i>
+            </a>
           </li>
           <li>
-            <i className="bi bi-facebook"></i>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <i className="bi bi-facebook"></i>
+            </a>
           </li>
           <li>
-            <i className="bi bi-twitter"></i>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              <i className="bi bi-twitter"></i>
+            </a>
           </li>
         </ul>
       </div>
+
+      {/* Lower Footer Sections */}
       <div className="lower-footer">
         <div className="links section">
-          <h3>Usefull Links</h3>
+          <h3>Useful Links</h3>
           <ul>
-            <Link to="./">Home</Link>
-            <Link to="./authors">Authors</Link>
-            <Link to="./blog">Blog</Link>
-            <Link to="./about">About Us</Link>
-            <Link to="./contact">Contact Us</Link>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/authors">Authors</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
+
         <div className="contact section">
-          <h3>Contact Information</h3>
+          <h3>Contact Info</h3>
           <ul>
-            <li>
-              <p>Algeria - Tipaza - Hadjout</p>
-            </li>
-            <li>
-              <p>123-456-789</p>
-            </li>
-            <li>
-              <p>example@email.com</p>
-            </li>
+            <li>Jodhpur, Rajasthan</li>
+            <li>+91 9128634469</li>
+            <li>example@email.com</li>
           </ul>
         </div>
+
         <div className="about section">
           <h3>About</h3>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
-          delectus eaque. Eveniet exercitationem ad ullam vitae voluptatem nulla
-          expedita quibusdam sapiente repellat sunt, vero nemo, rem tempore
-          beatae placeat corrupti.
+          <p>
+            BookNest is your one-stop online bookstore. From novels to research 
+            papers, we provide a wide collection to fuel your reading journey.
+          </p>
         </div>
+      </div>
+
+      {/* Bottom Line */}
+      <div className="footer-bottom">
+        <p>© {new Date().getFullYear()} BookNest | All Rights Reserved</p>
       </div>
     </footer>
   );
